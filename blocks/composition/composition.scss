@@ -1,0 +1,143 @@
+.composition {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $padding-section-desktop;
+  background-color: $color-yellow;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 78px 228px 1fr 189px;
+
+  @media screen and (max-width: 1378px) {
+    padding: $padding-section-tablet;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__lead {
+    margin: 0;
+    text-transform: uppercase;
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (max-width: 1378px) {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__title {
+    max-width: 403px;
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 642px;
+    max-height: 685px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    @media screen and (max-width: 1378px) {
+      margin: 60px 0 60px 0;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text-paragraph {
+    margin: 0;
+    padding: 0 0 20px 0;
+    max-width: 374px;
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__text-paragraph:nth-child(2) {
+    max-width: 350px;
+  }
+
+  &__span-accent {
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  .enroll-button {
+    padding: 9px 0 10px 0;
+    background-color: $color-white;
+    color: $color-black;
+    font-family: $font-roboto;
+    border: 2px solid $color-black;
+    border-radius: 9999px;
+    height: 49px;
+    width: 228px;
+    cursor: url(/images/foto/cursor.svg), pointer;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+
+    @media screen and (max-width: 1378px) {
+      margin: 60px 0 0 0;
+    }
+  }
+
+  .enroll-button:hover {
+    font-weight: 500;
+  }
+
+  &__regulations {
+    margin: 100px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 291px);
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    gap: 56px;
+
+    @media screen and (max-width: 1378px) {
+      display: block;
+      margin: 80px 0 0 0;
+    }
+  }
+
+  &__text-regulation {
+    margin: 0;
+    padding: 0;
+    color: $color-black;
+    font-family: $font-roboto;
+    max-width: 291px;
+    max-height: 84px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+    @media screen and (max-width: 1378px) {
+      border-bottom: 1px solid #000000;
+      padding-bottom: 29px;
+      margin: 30px 0 0 0;
+      max-width: 100%;
+    }
+  }
+}

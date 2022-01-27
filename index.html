@@ -2,9 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Курс по фотографии</title>
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body>
+<header class="header">
+    <div class="header__container">
+        <img src="/images/foto/logo.png" alt="Лого" class="header__logo">
+        <button class="header__menu-button" type="button" aria-label="Меню"></button>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li>
+                    <a href="#" class="header__link">Композиция</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Камера</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Поиск заказов</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__menu-container header__menu-container_opened">
+        <nav class="header__menu-list">
+            <ul class="header__list">
+                <li>
+                    <a href="#" class="header__link">Композиция</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Камера</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Поиск заказов</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="header__button-close" type="button" aria-label="Закрыть"></button>
+    </div>
+</header>
+
+<main>
+    <section class="photography">
+        <h1 class="photography__title">Курс по фотографии</h1>
+        <img class="photography__main-illustration" src="images/foto/forest.png" alt="Огромные многолетние деревья">
+        <div class="photography__description">
+            <p class="photography__subtitle">Фотография в&nbsp;природных условиях, уроки по композиции
+                и&nbsp;по&nbsp;пользованию камерой.</p>
+            <button type="button" class="photography__more-button" aria-label="Подробнее">Подробнее</button>
+        </div>
+
+    </section>
+
+    <section class="composition">
+        <h3 class="composition__lead">Композиция</h3>
+        <h2 class="composition__title">Изучите композицию</h2>
+        <img src="images/foto/road.png" class="composition__image" alt="Дорога среди деревьев">
+        <div class="composition__description">
+            <div class="composition__paragraphs">
+                <p class="composition__text-paragraph">Вы изучите гармоничное размещение всех элементов изображения на
+                    <span class="composition__span-accent">снимке.</span></p>
+                <p class="composition__text-paragraph">Изучите композицию интуитивную и какие-то определённые
+                    законы.</p>
+            </div>
+            <button type="button" class="enroll-button" aria-label="Записаться">Записаться!</button>
+        </div>
+        <div class="composition__regulations">
+            <p class="composition__text-regulation">Правило третей, при котором нужно располагать объекты на
+                пересечениях.</p>
+            <p class="composition__text-regulation">Простота: убирай всё лишнее и кадрируй!</p>
+            <p class="composition__text-regulation">Равновесие: уравновесь пятна объекта и фона</p>
+            <p class="composition__text-regulation">3D глубина кадра: расположи объект позади и перед другими
+                предметами.</p>
+        </div>
+    </section>
+    <section class="shooting">
+        <h3 class="shooting__name">Камера</h3>
+        <div class="shooting__title-section">
+            <h2 class="shooting__title">Настройка</h2>
+            <h2 class="shooting__title">Съемка</h2>
+            <h2 class="shooting__title">Обработка</h2>
+        </div>
+        <img src="images/foto/oak-forest.png" class="shooting__image" alt="Зеленый лес">
+        <h3 class="shooting__part-title">отзывы про часть о камерах:</h3>
+        <article class="shooting__part">
+            <h2 class="shooting__participant-text">на этом курсе я научился пользоватся камерой, как настоящий
+                профессионал!</h2>
+            <p class="shooting__participant">Питер, водитель.</p>
+            <p class="shooting__participant-instagram">@piter123</p>
+        </article>
+        <article class="shooting__part">
+            <h2 class="shooting__participant-text">супер крутой курс! на&nbsp;части про фотики я&nbsp;стал разбираться
+                в предназначении кнопок</h2>
+            <p class="shooting__participant">Джон, спортсмен.</p>
+            <p class="shooting__participant-instagram">@john_sport</p>
+        </article>
+    </section>
+
+    <section class="search-orders">
+        <h3 class="search-orders__subtitle">Поиск заказов</h3>
+        <h2 class="search-orders__title">Научим находить заказы!</h2>
+        <img src="images/foto/tree.png" class="search-orders__image" alt="Высокая ель">
+        <div class="search-orders__description">
+            <p class="search-orders__text">Мы&nbsp;научим вас искать заказы на&nbsp;всяких фриланс биржах,
+                а&nbsp;когда вы&nbsp;сделаете крутое портфолио, мы&nbsp;поможем найти постоянную работу.</p>
+            <button type="button" class="enroll-button" aria-label="Записаться">Записаться</button>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <img class="footer__arrow" src="images/foto/arrow.svg" alt="Стрелка">
+    <div class="footer__title-container">
+        <h2 class="footer__title">Записаться! Cейчас!</h2>
+    </div>
+    <form class="footer__enroll" name="name-email">
+        <input type="email" name="email" id="email" placeholder="Ваша почта" class="footer__email" required>
+        <button type="submit" class="enroll-button enroll-button_size_footer" aria-label="Записаться" value="Записаться!">Записаться!</button>
+    </form>
+    <p class="footer__copyleft">2021 Photo-lessons.</p>
+</footer>
+<script src=""></script>
+
 
 </body>
 </html>

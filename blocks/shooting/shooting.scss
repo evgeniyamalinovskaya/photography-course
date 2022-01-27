@@ -1,0 +1,117 @@
+.shooting {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $padding-section-desktop;
+  background-color: $color-black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 78px 367px 387px 1fr;
+
+  @media screen and (max-width: 1400px) {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    margin: 0;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $color-white;
+    text-transform: uppercase;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (max-width: 1400px) {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__title-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color-white;
+    font-family: $font-roboto;
+    font-size: 122px;
+    font-weight: 400;
+    line-height: 122px;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 642px;
+    max-height: 832px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    @media screen and (max-width: 1400px) {
+      margin: 60px 0 60px 0;
+    }
+  }
+
+  &__part-title {
+    margin: 0;
+    font-family: $font-roboto;
+    color:$color-white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    align-self: end;
+
+    @media screen and (max-width: 1400px) {
+      align-self: start;
+    }
+  }
+
+  &__part {
+    margin: 180px 0 0 0;
+  }
+  &__part:last-child {
+    border-top: 1px solid #ffffff;
+    max-width: 100%;
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+
+  &__participant-text {
+    max-width: 526px;
+    margin: 0;
+    padding-bottom: 60px;
+    font-family: $font-roboto;
+    color:$color-white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 43px;
+  }
+
+  &__participant {
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: $font-roboto;
+    color:$color-white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__participant-instagram {
+    margin: 0;
+    font-family: $font-roboto;
+    color:$color-white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
