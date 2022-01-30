@@ -120,7 +120,7 @@
     border-radius: 9999px;
     width: 228px;
     height: 49px;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: $cursor, pointer;
     text-align: center;
 
     @media screen and (max-width: $desktop-size) {
