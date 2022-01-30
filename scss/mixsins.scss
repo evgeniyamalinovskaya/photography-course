@@ -1,0 +1,19 @@
+@mixin grid {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $padding-section-desktop;
+  display: grid;
+}
+
+@mixin flex {
+  padding: $padding-section-tablet;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin font-size {
+  font-family: $font-roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}

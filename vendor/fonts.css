@@ -9,6 +9,15 @@
 
 @font-face {
   src:
+  url('../fonts/Inter-Bold.woff2') format('woff2'),
+  url('../fonts/Inter-Bold.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src:
   url('../fonts/Roboto-Regular.woff2') format('woff2'),
   url('../fonts/Roboto-Regular.woff') format('woff');
   font-family: 'Roboto';

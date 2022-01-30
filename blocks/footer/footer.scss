@@ -7,57 +7,58 @@
   grid-template-columns: max-content 1fr;
   column-gap: 42px;
 
+  @media screen and (max-width: $status-desktop-size) {
+    @include flex;
+  }
+
+  @media screen and (max-width: $tablet-size) {
+    padding: $padding-section-mobile;
+  }
+
   &__arrow {
     padding-top: 10px;
 
-    @media screen and (max-width: $tablet-size) {
+    @media screen and (max-width: $status-desktop-size) {
       display: none;
     }
   }
   &__title-container {
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: 2 / 3;
   }
 
   &__title {
     color: $color-white;
-    margin: 0;
+    padding: 0;
     grid-column-start: 2;
     grid-column-end: 3;
-    margin-bottom: 120px;
+    margin: 0 0 120px;
     max-width: 690px;
     font-family: $font-roboto;
-    font-style: normal;
     font-weight: 400;
     font-size: 120px;
     line-height: 120px;
 
-      @media screen and (max-width: $tablet-size) {
-        margin-bottom: 190px;
-        max-width: 600px;
+      @media screen and (max-width: $status-desktop-size) {
+        margin: 0 0 190px 0;
+        max-width: 571px;
         font-size: 100px;
         line-height: 100px;
 
       }
-      @media screen and (max-width: $mobile-size) {
+      @media screen and (max-width: $tablet-size) {
         max-width: 274px;
         padding-top: 20px;
+        border-top: 1px solid $color-white;
         margin-bottom: 200px;
         font-size: 48px;
         line-height: 50px;
       }
   }
 
-  &__title-container {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
   &__enroll {
     display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: 2 / 3;
   }
 
   &__email {
@@ -70,7 +71,7 @@
     padding: 0 0 0 20px;
     width: 348px;
     height: 46px;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0 0 8px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -81,26 +82,27 @@
     line-height: 24px;
     letter-spacing: 0.375px;
 
+    @media screen and (max-width: $tablet-size) {
+      width: 168px;
+      font-size: 11px;
+    }
   }
 
   .enroll-button {
+    @include font-size;
     padding: 9px 0 10px 0;
     background-color: $color-white;
     color: $color-black;
-    font-family: $font-roboto;
     border: 2px solid $color-black;
     border-radius: 9999px;
     height: 49px;
     width: 228px;
     cursor: url(/images/foto/cursor.svg), pointer;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
     text-align: center;
   }
 
   .enroll-button_size_footer {
-    border-radius: 0px 8px 8px 0px;
+    border-radius: 0 8px 8px 0;
     width: 205px;
     height: 50px;
     font-size: 14px;
@@ -108,6 +110,11 @@
     line-height: 24px;
     padding: 0;
     letter-spacing: 0.375px;
+
+    @media screen and (max-width: $tablet-size) {
+      width: 107px;
+      font-size: 11px;
+    }
   }
   .enroll-button_size_footer:hover {
     font-weight: 700;
@@ -122,10 +129,10 @@
     font-size: 15px;
     line-height: 24px;
 
-    @media screen and (max-width: $tablet-size) {
-      margin-top: 80px;
+    @media screen and (max-width: $status-desktop-size) {
+      margin: 80px 0 0 0;
     }
-    @media screen and (max-width: $mobile-size) {
+    @media screen and (max-width: $tablet-size) {
       margin-top: 40px;
       font-size: 12px;
     }

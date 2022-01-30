@@ -9,38 +9,39 @@
 
 <body>
 <header class="header">
+
     <div class="header__container">
         <img src="/images/foto/logo.png" alt="Лого" class="header__logo">
         <button class="header__menu-button" type="button" aria-label="Меню"></button>
         <nav class="header__menu">
             <ul class="header__list">
                 <li>
-                    <a href="#" class="header__link">Композиция</a>
+                    <a href="#composition" class="header__link">Композиция</a>
                 </li>
                 <li>
-                    <a href="#" class="header__link">Камера</a>
+                    <a href="#shooting" class="header__link">Камера</a>
                 </li>
                 <li>
-                    <a href="#" class="header__link">Поиск заказов</a>
+                    <a href="#search-orders" class="header__link">Поиск заказов</a>
                 </li>
             </ul>
         </nav>
     </div>
-    <div class="header__menu-container header__menu-container_opened">
-        <nav class="header__menu-list">
+    <div class="header__burger">
+        <nav class="header__burger-menu">
             <ul class="header__list">
                 <li>
-                    <a href="#" class="header__link">Композиция</a>
+                    <a href="#composition" class="header__link">Композиция</a>
                 </li>
                 <li>
-                    <a href="#" class="header__link">Камера</a>
+                    <a href="#shooting" class="header__link">Камера</a>
                 </li>
                 <li>
-                    <a href="#" class="header__link">Поиск заказов</a>
+                    <a href="#search-orders" class="header__link">Поиск заказов</a>
                 </li>
             </ul>
         </nav>
-        <button class="header__button-close" type="button" aria-label="Закрыть"></button>
+        <button class="header__burger-close" type="button" aria-label="Закрыть"></button>
     </div>
 </header>
 
@@ -56,7 +57,7 @@
 
     </section>
 
-    <section class="composition">
+    <section id="composition" class="composition">
         <h3 class="composition__lead">Композиция</h3>
         <h2 class="composition__title">Изучите композицию</h2>
         <img src="images/foto/road.png" class="composition__image" alt="Дорога среди деревьев">
@@ -78,7 +79,7 @@
                 предметами.</p>
         </div>
     </section>
-    <section class="shooting">
+    <section id="shooting" class="shooting">
         <h3 class="shooting__name">Камера</h3>
         <div class="shooting__title-section">
             <h2 class="shooting__title">Настройка</h2>
@@ -101,7 +102,7 @@
         </article>
     </section>
 
-    <section class="search-orders">
+    <section id="search-orders" class="search-orders">
         <h3 class="search-orders__subtitle">Поиск заказов</h3>
         <h2 class="search-orders__title">Научим находить заказы!</h2>
         <img src="images/foto/tree.png" class="search-orders__image" alt="Высокая ель">
@@ -118,14 +119,14 @@
     <div class="footer__title-container">
         <h2 class="footer__title">Записаться! Cейчас!</h2>
     </div>
-    <form class="footer__enroll" name="name-email">
+    <form class="footer__enroll" name="name-form">
         <input type="email" name="email" id="email" placeholder="Ваша почта" class="footer__email" required>
-        <button type="submit" class="enroll-button enroll-button_size_footer" aria-label="Записаться" value="Записаться!">Записаться!</button>
+        <button type="submit" name="submit" class="enroll-button enroll-button_size_footer" aria-label="Записаться" value="Записаться!">Записаться!</button>
     </form>
-    <p class="footer__copyleft">2021 Photo-lessons.</p>
+    <p class="footer__copyleft">2022 Photo-lessons.</p>
 </footer>
-<script src=""></script>
 
+<script src="scripts/index.js"></script>
 
 </body>
 </html>

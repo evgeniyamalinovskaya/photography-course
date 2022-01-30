@@ -1,63 +1,193 @@
 .header {
   max-width: 1440px;
+  max-height: 84px;
   margin: 0 auto;
   padding: 15px 50px 18px 50px;
   background-color: $color-red;
+
+  @media screen and (max-width: $status-tablet-size) {
+    max-width: 784px;
+    max-height: 84px;
+    padding: 25px 40px 25px 40px;
+  }
+
+  @media screen and (max-width: $status-mobile-size) {
+    padding: 20px 20px 20px 20px;
+  }
 
     &__container {
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 3;
-  }
-  @media screen and (max-width: $tablet-size) {
 
-  }
-  @media screen and (max-width: $mobile-size) {
-
-  }
+      &_hidden {
+        display: none;
+      }
+ }
 
   &__logo {
     height: 40px;
     width: 40px;
+    cursor: $cursor, pointer;
+
+    @media screen and (max-width: $status-tablet-size) {
+      height: 36px;
+      width: 36px;
+    }
+
+    @media screen and (max-width: $status-mobile-size) {
+      height: 30px;
+      width: 30px;
+      z-index: 10;
+    }
+
+    &:hover {
+      animation: rotation;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 7s;
+      animation-direction: reverse;
+    }
   }
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      from {
+        transform: rotate(360deg);
+      }
+    }
 
   &__menu-button {
     display: none;
+
+    @media screen and (max-width: $status-tablet-size) {
+      display: block;
+      width: 32px;
+      height: 24px;
+      background-image: url(/images/foto/menu.svg);
+      border: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      cursor: $cursor, pointer;
+      color: $color-white;
+    }
+
+  }
+
+  &__menu {
+    align-items: center ;
+      @media screen and (max-width: $status-tablet-size) {
+      display: none;
+    }
   }
 
  &__list {
+   margin: 0;
    padding: 0;
    width: 351px;
    list-style-type: none;
    display: flex;
    justify-content: space-between;
 
+   @media screen and (max-width: $status-tablet-size) {
+     margin-left: 40px;
+   }
+
+   @media screen and (max-width: $status-mobile-size) {
+     display: grid;
+     gap: 17px;
+     flex-direction: column;
+     text-align: center;
+     justify-content: center;
+     width: 100%;
+     max-width: 320px;
+     margin: 0;
+     padding: 76px 0 30px 0;
+   }
  }
+
   &__link {
     margin: 0;
+    padding: 0;
     color: $color-white;
     font-family: $font-inter;
+    cursor: $cursor, pointer;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-decoration: none;
+  }
+
+  &__link:hover {
+    font-weight: 700;
     transition-duration: 0.2s;
     transition-timing-function: linear;
   }
 
-  &__menu-container {
-    display: none;
+  &__burger {
+      display: none;
+
+      @media screen and (max-width: $status-tablet-size) {
+        display: none;
+        background-color: $color-red;
+        min-height: 84px;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    @media screen and (max-width: $status-mobile-size) {
+      max-height: 198px;
+      justify-content: center;
+      align-items: center;
+    }
+      &_opened {
+        display: flex;
+        max-height: 198px;
+    }
   }
 
-  &__menu-list {
+  &__burger-menu {
     padding: 0;
     margin: 0;
+
+    @media screen and (max-width: $status-tablet-size) {
+      margin-left: 40px;
+    }
+    @media screen and (max-width: $status-mobile-size) {
+      width: 100%;
+      display: flex;
+      max-width: 320px;
+      padding: 0;
+      margin: 0;
+    }
   }
 
-  &__close-button {
-    display: none;
+  &__burger-close {
+    @media screen and (max-width: $status-tablet-size) {
+      width: 27px;
+      height: 27px;
+      position: absolute;
+      right: 35px;
+      border: 0;
+      background-image: url('/images/foto/close button.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      cursor: $cursor, pointer;
+      color: $color-white;
+    }
+    @media screen and (max-width: $status-mobile-size) {
+      top: 21px;
+      right: 16px;
+    }
   }
-
 }
