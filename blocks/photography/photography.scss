@@ -71,7 +71,7 @@
     max-width: 228px;
     max-height: 49px;
     background: $color-white;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: $cursor, pointer;
     border: 2px solid $color-black;
     box-sizing: border-box;
     border-radius: 9999px;
