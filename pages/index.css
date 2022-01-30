@@ -45,7 +45,7 @@
 .header__logo {
   height: 40px;
   width: 40px;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: url(.././images/foto/cursor.svg), pointer;
 }
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -88,7 +88,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: url(.././images/foto/cursor.svg), pointer;
     color: #FFFFFF;
   }
 }
@@ -131,7 +131,7 @@
   padding: 0;
   color: #FFFFFF;
   font-family: "Inter";
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: url(.././images/foto/cursor.svg), pointer;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -200,7 +200,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: url(.././images/foto/cursor.svg), pointer;
     color: #FFFFFF;
   }
 }
@@ -942,7 +942,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: url(.././images/foto/cursor.svg), pointer;
   font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
