@@ -3,9 +3,9 @@ $color-red: #DF2626;
 $color-yellow: #FFCE00;
 $color-black: #000000;
 
-$font-inter: 'Inter';
-$font-roboto: 'Roboto';
-$cursor: url(../images/foto/cursor.svg);
+$font-inter: 'Inter', 'Arial', sans-serif;;
+$font-roboto: 'Roboto', 'Arial', sans-serif;;
+$cursor: pointer;
 
 $padding-section-desktop: 50px;
 $padding-section-tablet: 40px;

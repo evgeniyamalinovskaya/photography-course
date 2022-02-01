@@ -105,7 +105,7 @@
     border-radius: 9999px;
     height: 49px;
     width: 228px;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: $cursor;
     text-align: center;
 
     &:hover {
