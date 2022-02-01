@@ -22,16 +22,11 @@
       display: none;
     }
   }
-  &__title-container {
-    display: flex;
-    grid-column: 2 / 3;
-  }
 
   &__title {
     color: $color-white;
     padding: 0;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column: 2 / 3;
     margin: 0 0 120px;
     max-width: 690px;
     font-family: $font-roboto;
@@ -97,7 +92,7 @@
     border-radius: 9999px;
     height: 49px;
     width: 228px;
-    cursor: $cursor, pointer;
+    cursor: $cursor;
     text-align: center;
   }
 

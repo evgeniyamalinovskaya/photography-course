@@ -1,6 +1,6 @@
 .shooting {
   @include grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
   grid-template-rows: 78px 367px 387px 1fr;
   background-color: $color-black;
 
