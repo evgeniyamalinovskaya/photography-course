@@ -45,7 +45,7 @@
 .header__logo {
   height: 40px;
   width: 40px;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .header__logo {
@@ -83,12 +83,12 @@
     display: block;
     width: 32px;
     height: 24px;
-    background-image: url(/images/foto/menu.svg);
+    background-image: url("../../images/foto/menu.svg");
     border: 0;
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: pointer, pointer;
     color: #FFFFFF;
   }
 }
@@ -130,8 +130,8 @@
   margin: 0;
   padding: 0;
   color: #FFFFFF;
-  font-family: "Inter";
-  cursor: url(/images/foto/cursor.svg), pointer;
+  font-family: "Inter", "Arial", sans-serif;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -196,11 +196,11 @@
     position: absolute;
     right: 35px;
     border: 0;
-    background-image: url("/images/foto/close button.png");
+    background-image: url("../../images/foto/close button.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    cursor: url(/images/foto/cursor.svg), pointer;
+    cursor: pointer, pointer;
     color: #FFFFFF;
   }
 }
@@ -238,7 +238,7 @@
   max-width: 624px;
   max-height: 224px;
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 100px;
   line-height: 110px;
@@ -264,7 +264,7 @@
   max-width: 469px;
   max-height: 56px;
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -284,7 +284,7 @@
   }
 }
 .photography__more-button {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -293,7 +293,7 @@
   max-width: 228px;
   max-height: 49px;
   background: #FFFFFF;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: pointer;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 9999px;
@@ -316,7 +316,7 @@
   transition-timing-function: linear;
 }
 .photography__text {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -372,7 +372,7 @@
   }
 }
 .composition__lead {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -399,7 +399,7 @@
 .composition__title {
   max-width: 403px;
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
@@ -444,7 +444,7 @@
   justify-content: space-between;
 }
 .composition__text-paragraph {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -463,9 +463,14 @@
 .composition__text-paragraph:nth-child(2) {
   max-width: 350px;
 }
+@media screen and (max-width: 700px) {
+  .composition__text-paragraph:nth-child(2) {
+    padding: 0;
+  }
+}
 .composition__span-accent {
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
@@ -477,7 +482,7 @@
   }
 }
 .composition .enroll-button {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -488,7 +493,7 @@
   border-radius: 9999px;
   width: 228px;
   height: 49px;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: pointer;
   text-align: center;
 }
 @media screen and (max-width: 1380px) {
@@ -501,6 +506,7 @@
     font-size: 14px;
     width: 169px;
     height: 40px;
+    margin: 30px 0 0 0;
     padding: 6px 0 6px 0;
   }
 }
@@ -522,7 +528,7 @@
   }
 }
 .composition__text-regulation {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -558,7 +564,7 @@
   margin: 0 auto;
   padding: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr max-content;
   grid-template-rows: 78px 367px 387px 1fr;
   background-color: #000000;
 }
@@ -575,7 +581,7 @@
   }
 }
 .shooting__name {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -606,7 +612,7 @@
 .shooting__title {
   margin: 0;
   color: #FFFFFF;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 122px;
   font-weight: 400;
   line-height: 122px;
@@ -642,7 +648,7 @@
   }
 }
 .shooting__part-title {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -690,7 +696,7 @@
   max-width: 526px;
   margin: 0;
   padding-bottom: 60px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 43px;
@@ -703,7 +709,7 @@
   }
 }
 .shooting__participant {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -714,7 +720,7 @@
 .shooting__participant-instagram {
   margin: 0;
   padding: 0;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 14px;
@@ -743,7 +749,7 @@
   }
 }
 .search-orders__subtitle {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -764,7 +770,7 @@
 .search-orders__title {
   margin: 78px 0 106px 0;
   color: #000000;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 64px;
   font-weight: 400;
   line-height: 64px;
@@ -809,7 +815,7 @@
   justify-self: end;
 }
 .search-orders__text {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -835,7 +841,7 @@
   }
 }
 .search-orders .enroll-button {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -846,7 +852,7 @@
   border-radius: 9999px;
   height: 49px;
   width: 228px;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: pointer;
   text-align: center;
 }
 .search-orders .enroll-button:hover {
@@ -890,18 +896,13 @@
     display: none;
   }
 }
-.footer__title-container {
-  display: flex;
-  grid-column: 2/3;
-}
 .footer__title {
   color: #FFFFFF;
   padding: 0;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2/3;
   margin: 0 0 120px;
   max-width: 690px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 120px;
   line-height: 120px;
@@ -942,8 +943,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  cursor: url(/images/foto/cursor.svg), pointer;
-  font-family: "Roboto";
+  cursor: pointer, pointer;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -956,7 +957,7 @@
   }
 }
 .footer .enroll-button {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -967,7 +968,7 @@
   border-radius: 9999px;
   height: 49px;
   width: 228px;
-  cursor: url(/images/foto/cursor.svg), pointer;
+  cursor: pointer;
   text-align: center;
 }
 .footer .enroll-button_size_footer {
@@ -992,7 +993,7 @@
 .footer__copyleft {
   color: #FFFFFF;
   margin: 86px 0 0 0;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
