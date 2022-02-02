@@ -1,0 +1,189 @@
+.composition {
+  @include grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: 78px 228px 1fr 189px;
+  background-color: $color-yellow;
+
+  @media screen and (max-width: $desktop-size) {
+    @include flex;
+  }
+
+  @media screen and (max-width: $tablet-size) {
+    padding: $padding-section-mobile;
+  }
+
+  &__lead {
+    @include font-size;
+    margin: 0;
+    text-transform: uppercase;
+    color: $color-black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (max-width: $desktop-size) {
+      margin: 0 0 40px 0;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 20px 0 0 0;
+      margin: 0 0 30px 0;
+      border-top: 1px solid $color-black;
+    }
+  }
+
+  &__title {
+    max-width: 403px;
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 642px;
+    max-height: 685px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+
+    @media screen and (max-width: $status-tablet-size) {
+      max-width: 688px;
+    }
+
+    @media screen and (max-width: $desktop-size) {
+      margin: 60px 0 60px 0;
+    }
+
+    @media screen and (max-width: $mobile-size) {
+      max-width: 280px;
+      max-height: 278px;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text-paragraph {
+    @include font-size;
+    margin: 0;
+    padding: 0 0 20px 0;
+    max-width: 374px;
+    color: $color-black;
+
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0 0 36px 0;
+    }
+  }
+
+  &__text-paragraph:nth-child(2) {
+    max-width: 350px;
+
+    @media screen and (max-width: $tablet-size) {
+      padding: 0;
+    }
+  }
+
+  &__span-accent {
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  .enroll-button {
+    @include font-size;
+    padding: 9px 0 10px 0;
+    background-color: $color-white;
+    color: $color-black;
+    border: 2px solid $color-black;
+    border-radius: 9999px;
+    width: 228px;
+    height: 49px;
+    cursor: $cursor;
+    text-align: center;
+
+    @media screen and (max-width: $desktop-size) {
+      margin: 40px 0 0 0;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      width: 169px;
+      height: 40px;
+      margin: 30px 0 0 0;
+      padding: 6px 0 6px 0;
+    }
+  }
+
+  .enroll-button:hover {
+    font-weight: 500;
+  }
+
+  &__regulations {
+    margin: 100px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(4, 291px);
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    gap: 56px;
+
+    @media screen and (max-width: $desktop-size) {
+      display: block;
+      margin: 50px 0 0 0;
+    }
+  }
+
+  &__text-regulation {
+    @include font-size;
+    margin: 0;
+    padding: 0;
+    color: $color-black;
+    max-width: 291px;
+    max-height: 84px;
+
+    @media screen and (max-width: $desktop-size) {
+      border-bottom: 1px solid $color-black;
+      padding: 0 0 29px 0;
+      margin: 30px 0 0 0;
+      max-width: 100%;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 14px 0 0 0;
+      padding: 0 0 14px 0;
+    }
+  }
+
+  &__text-regulation:last-child {
+     border-bottom: none;
+     padding: 0;
+   }
+
+}

@@ -1,0 +1,45 @@
+@font-face {
+  src:
+  url('../fonts/Inter-Regular.woff2') format('woff2'),
+  url('../fonts/Inter-Regular.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src:
+  url('../fonts/Inter-Bold.woff2') format('woff2'),
+  url('../fonts/Inter-Bold.woff') format('woff');
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  src:
+  url('../fonts/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto-Regular.woff') format('woff');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src:
+  url('../fonts/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/Roboto-Medium.woff') format('woff');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src:
+  url('../fonts/Roboto-Bold.woff2') format('woff2'),
+  url('../fonts/Roboto-Bold.woff') format('woff');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}
+

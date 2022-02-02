@@ -1,0 +1,122 @@
+.search-orders {
+  @include grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr max-content;
+  background-color: $color-white;
+
+  @media screen and (max-width: $status-desktop-size) {
+    @include flex;
+  }
+
+  @media screen and (max-width: $tablet-size) {
+    padding: $padding-section-mobile;
+  }
+
+  &__subtitle {
+    @include font-size;
+    margin: 0;
+    color: $color-black;
+    text-transform: uppercase;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 14px;
+      line-height: 20px;
+      padding-top: 20px;
+      border-top: 1px solid $color-black;
+    }
+  }
+
+  &__title {
+    margin: 78px 0 106px 0;
+    color: $color-black;
+    font-family: $font-roboto;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    @media screen and (max-width: $status-desktop-size) {
+      margin: 40px 0 60px 0;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 32px;
+      line-height: 38px;
+      margin: 30px 0 0 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 688px;
+    max-height: 333px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+
+    @media screen and (max-width: $status-desktop-size) {
+      padding: 60px 0 60px 0;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      padding: 60px 0 60px 0;
+    }
+  }
+
+  &__description {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: end;
+  }
+
+  &__text {
+    @include font-size;
+    margin: 0;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    color: $color-black;
+    height: 112px;
+    width: 380px;
+
+    @media screen and (max-width: $status-desktop-size) {
+      padding: 0 0 60px 0;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      height: 72px;
+      width: 280px;
+      font-size: 14px;
+      line-height: 18px;
+      padding: 0 0 30px 0;
+    }
+  }
+
+  .enroll-button {
+    @include font-size;
+    padding: 9px 0 10px 0;
+    background-color: $color-white;
+    color: $color-black;
+    border: 2px solid $color-black;
+    border-radius: 9999px;
+    height: 49px;
+    width: 228px;
+    cursor: $cursor;
+    text-align: center;
+
+    &:hover {
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      padding: 6px 0 6px 0;
+      height: 40px;
+      width: 169px;
+      font-size: 14px;
+    }
+  }
+}
